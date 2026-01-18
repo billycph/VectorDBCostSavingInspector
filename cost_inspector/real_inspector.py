@@ -2,7 +2,7 @@ import random
 import statistics
 import datetime
 import time
-from utilities import print_header, print_success, print_money
+from cost_inspector.utilities import print_header, print_success, print_money
 
 def run_inspector(index, stats, time_field):
     """

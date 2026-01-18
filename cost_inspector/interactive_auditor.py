@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from utilities import print_header, print_money, get_user_input
+from cost_inspector.utilities import print_header, print_money, get_user_input
 
 @dataclass
 class WorkloadProfile:
