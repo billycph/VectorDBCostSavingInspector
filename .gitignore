@@ -10,4 +10,3 @@ pyvenv.cfg
 vector_db_inspector.egg-info/
 # Python cache
 */__pycache__/
-.env
