@@ -7,6 +7,6 @@ bin/
 include/
 lib/ 
 pyvenv.cfg
-vector_db_inspector.egg-info/
+vector_db_cost_inspector.egg-info/
 # Python cache
 */__pycache__/
