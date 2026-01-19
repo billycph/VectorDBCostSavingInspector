@@ -1,2 +1,13 @@
 # Created by venv; see https://docs.python.org/3/library/venv.html
-*
+
+# Environment variables
+.env
+# Python virtual environment
+bin/
+include/
+lib/ 
+pyvenv.cfg
+vector_db_inspector.egg-info/
+# Python cache
+*/__pycache__/
+.env
