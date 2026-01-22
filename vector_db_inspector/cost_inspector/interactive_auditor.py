@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from .utilities import print_header, print_money, get_user_input
+from .utilities import print_header, print_money, get_user_input, print_cta
 
 @dataclass
 class WorkloadProfile:
@@ -50,6 +50,7 @@ def run_auditor(default_count=None):
     print(f"Total Volume:      {size_gb:.2f} GB")
     print(f"Likely Stale:      {stale_gb:.2f} GB")
     print_money(f"Projected Savings: ${savings:.2f} / Month")
+    print_cta()
     
     print("\n[!] NOTE: To get an exact number, add a 'created_at' timestamp to your metadata")
     print("    and re-run this tool. We can then inspect the real distribution.")
