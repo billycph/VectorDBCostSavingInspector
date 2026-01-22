@@ -2,7 +2,7 @@ import random
 import statistics
 import datetime
 import time
-from .utilities import print_header, print_success, print_money
+from .utilities import print_header, print_success, print_money, print_cta
 
 def run_inspector(index, stats, time_field):
     """
@@ -72,5 +72,7 @@ def run_inspector(index, stats, time_field):
         print_success(f"Archivable Data: {est_vectors_stale:,} vectors")
         print_money(f"Potential Monthly Savings: ${net_savings:.2f}")
         print("\nRecommendation: Your data has timestamps. You can automate this TODAY.")
+        print_cta(savings_found=true)
     else:
         print("Your index is fresh. No significant savings available.")
+        print_cta()
