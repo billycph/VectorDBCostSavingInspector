@@ -10,3 +10,4 @@ pyvenv.cfg
 vector_db_cost_inspector.egg-info/
 # Python cache
 */__pycache__/
+vector_db_inspector/__pycache__/
