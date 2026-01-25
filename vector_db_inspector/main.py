@@ -10,6 +10,11 @@ from .cost_inspector import interactive_auditor
 # Common keys used for timestamps in the wild
 COMMON_TIME_KEYS = ['created_at', 'timestamp', 'date', 'unix_ts', 'ts', 'created', 'datetime']
 
+if len(sys.argv) > 1 and sys.argv[1] == "--help-me":
+    print("Need help optimizing your Vector DB?")
+    print("Email me: billychenph@example.com")
+    sys.exit(0)
+
 def detect_time_field(index, stats):
     """
     Probes the index to find a likely timestamp field in metadata.
