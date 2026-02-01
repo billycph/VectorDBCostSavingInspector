@@ -21,7 +21,7 @@ export PINECONE_API_KEY="your-pinecone-key"
 export PINECONE_INDEX_NAME="your-index-name"
 ```
 
-**Note:** This inspection tool only run in your machine. The Pinecone API key is only read by the inspection tool and won't be uploaded to cloud. We guarantee we don't have access to your Pinecone API key.
+**Note:** This inspection tool only run in your machine. The Pinecone API key is only read by the inspection tool and won't be uploaded to cloud. We guarantee we don't have access to your Pinecone API key. This is a open source python tool. You can check our code if you want anytime.  
 
 ### Prerequisites
 

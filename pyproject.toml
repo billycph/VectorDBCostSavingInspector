@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "vector-db-cost-inspector"
-version = "0.1.0"
+version = "0.1.2"
 authors = [
   { name="BillyCPH", email="billychenph@email.com" },
 ]
@@ -26,7 +26,7 @@ dependencies = [
 # This allows users to type "vector-inspect" in the terminal to run your script
 # Change 'main' to the name of your script file (without .py)
 # Change 'main_function' to the function you want to run (usually 'main')
-vector-inspect = "vector_db_inspector.main:main"
+vector-inspect = "vector_db_inspector.main"
 
 [tool.setuptools]
 packages = ["vector_db_inspector"]
