@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from .utilities import print_header, print_money, get_user_input, print_cta
+from .utilities import print_header, print_warning, print_money, get_user_input, print_cta
 
 @dataclass
 class WorkloadProfile:
@@ -28,7 +28,7 @@ def run_auditor(default_count=None):
         vector_count = int(val.replace(",", ""))
 
     # 2. Get Profile
-    print("\nSince we couldn't find timestamps, please select your use case:")
+    print("\nSince we couldn't find timestamps from your vector database, please select your use case:")
     for k, p in PROFILES.items():
         print(f"  [{k}] {p.name}")
         
@@ -52,5 +52,8 @@ def run_auditor(default_count=None):
     print_money(f"Projected Savings: ${savings:.2f} / Month")
     print_cta()
     
-    print("\n[!] NOTE: To get an exact number, add a 'created_at' timestamp to your metadata")
-    print("    and re-run this tool. We can then inspect the real distribution.")
+    print("\n[!] NOTE: To get an exact number, create a .env file with Pinecone API key and index name.") 
+    print("    Then add a 'created_at' timestamp to your vector database metadata and re-run this tool.")
+    print("    We can then inspect the real distribution of your vector database.")
+    print_warning("The tool will only read the Pinecone API key and index name from the .env file and won't upload to cloud. ") 
+    print_warning("It is a open source python tool. You can check our code if you want anytime.")

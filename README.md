@@ -33,5 +33,5 @@ export PINECONE_INDEX_NAME="your-index-name"
 ### Run the inspection
 
 ```
-vector-db-cost-inspector
+vector-inspect
 ```

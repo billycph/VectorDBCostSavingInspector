@@ -63,7 +63,7 @@ def main():
 
     # CASE 1: No Keys -> Fallback directly to Auditor
     if not api_key or not index_name:
-        print_warning("No Pinecone credentials and index name found in environment.")
+        print_warning("No Pinecone API key and index name found in environment.")
         print("Switching to INTERACTIVE MODE (Estimator)...")
         interactive_auditor.run_auditor()
         return
