@@ -26,8 +26,12 @@ PINECONE_INDEX_NAME="your-index-name"
 If you prefer not to inspect your vector database, we can approxicate cost saving based on the number of vectors and how the vectors are used. 
 ### Prerequisites
 
+### Real cost saving inspection
 - A Pinecone Index.
 - Vectors in Pinecone MUST have a metadata field named created_at (Unix timestamp) for the time-based logic to work.
+
+### Approximate cost saving estimate
+- Number of vectors in your vector database
 
 ## Usage
 
