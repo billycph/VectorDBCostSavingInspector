@@ -1,5 +1,10 @@
 # VectorDBCostSavingInspector
 
+[pypi project](https://pypi.org/project/vector-db-cost-inspector)
+
+Python min version: 3.7
+
+## Overview
 This is a CLI tool designed to estimate how much money you can save on stale vectors database. The current version support Pinecone usage inspection based on vector's last access timestamp. 
 
 If your vector database is not Pinecone, we will estimate saving based on your vector database use cases. 
